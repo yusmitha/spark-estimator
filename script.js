@@ -1,12 +1,6 @@
 // ================================
 // REPAIR ITEMS DATA
 // ================================
-// This is our price list — each item has:
-// id     = unique code
-// name   = what the repair is
-// cost   = price per unit
-// unit   = what we're measuring (sqft, ea., etc.)
-
 const ITEMS = [
   { id: 'ig-01', name: 'Refinish Hardwood Floor',  cost: 2.35,  unit: 'sqft' },
   { id: 'ig-02', name: 'New Hardwoods 1.5"',        cost: 10.00, unit: 'sqft' },
@@ -20,6 +14,34 @@ const ITEMS = [
   { id: 'ig-10', name: 'Final Cleaning',            cost: 325.00,unit: 'flat' },
 ];
 
-// Test it — open browser console to see this
 console.log('Total items loaded:', ITEMS.length);
 console.log('First item:', ITEMS[0]);
+
+// ================================
+// SHOW ITEMS ON THE PAGE
+// ================================
+function renderItem(item) {
+  return `
+    <div class="bg-white rounded-xl p-4 mb-3 shadow-sm">
+      <div class="flex justify-between items-start">
+        <p class="font-semibold text-slate-800">${item.name}</p>
+        <p class="text-slate-300 text-sm font-bold">—</p>
+      </div>
+      <p class="text-xs text-slate-400 mt-1">
+        $${item.cost} / ${item.unit}
+      </p>
+    </div>
+  `;
+}
+
+function renderAllItems() {
+  const app = document.getElementById('app');
+  let html = '';
+  ITEMS.forEach(function(item) {
+    html = html + renderItem(item);
+  });
+  app.innerHTML = html;
+}
+
+// Run it!
+renderAllItems();
