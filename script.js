@@ -532,3 +532,17 @@ function exportToExcel() {
   const fileName = 'Spark-Repair-Estimate-' + new Date().toISOString().split('T')[0] + '.xlsx';
   XLSX.writeFile(wb, fileName);
 }
+// ================================
+// REGISTER SERVICE WORKER (PWA)
+// ================================
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/sw.js')
+      .then(function() {
+        console.log('Service Worker registered — app works offline!');
+      })
+      .catch(function(err) {
+        console.log('Service Worker failed:', err);
+      });
+  });
+}
