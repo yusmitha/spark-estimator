@@ -55,14 +55,14 @@ const GROUPS = [
     label: 'Misc & Finishing',
     section: 'Interior / General',
     items: [
-      { id: 'ig-19', name: 'Trim Out (Casing, Crown, Baseboard)', cost: 3.75,   unit: 'LF' },
-      { id: 'ig-20', name: 'MISC / Punch List',                   cost: 2650.00,unit: 'flat' },
-      { id: 'ig-21', name: 'Finish Out Labor',                    cost: 1350.00,unit: 'flat' },
-      { id: 'ig-22', name: 'Light Fixtures',                      cost: 70.00,  unit: '100 sqft' },
-      { id: 'ig-25', name: 'Demo',                                cost: 1375.00,unit: 'variable' },
-      { id: 'ig-26', name: 'Haul Off',                            cost: 725.00, unit: 'load' },
-      { id: 'ig-27', name: 'Final Cleaning',                      cost: 325.00, unit: 'flat' },
-      { id: 'ig-28', name: 'Staging',                             cost: 0.90,   unit: 'sqft' },
+      { id: 'ig-19', name: 'Trim Out (Casing, Crown, Baseboard)', cost: 3.75,    unit: 'LF' },
+      { id: 'ig-20', name: 'MISC / Punch List',                   cost: 2650.00, unit: 'flat' },
+      { id: 'ig-21', name: 'Finish Out Labor',                    cost: 1350.00, unit: 'flat' },
+      { id: 'ig-22', name: 'Light Fixtures',                      cost: 70.00,   unit: '100 sqft' },
+      { id: 'ig-25', name: 'Demo',                                cost: 1375.00, unit: 'variable' },
+      { id: 'ig-26', name: 'Haul Off',                            cost: 725.00,  unit: 'load' },
+      { id: 'ig-27', name: 'Final Cleaning',                      cost: 325.00,  unit: 'flat' },
+      { id: 'ig-28', name: 'Staging',                             cost: 0.90,    unit: 'sqft' },
     ]
   },
   {
@@ -108,13 +108,13 @@ const GROUPS = [
     label: 'Vanity & Countertop',
     section: 'Bathrooms',
     items: [
-      { id: 'ba-01', name: 'Granite ($/LF)',                   cost: 35.00,  unit: 'LF' },
-      { id: 'ba-02', name: 'New Bottom Vanity',                cost: 125.00, unit: 'LF' },
-      { id: 'ba-03', name: 'Home Depot Vanity w/ Sink (18")',  cost: 225.00, unit: 'ea.' },
-      { id: 'ba-04', name: 'Toilet',                           cost: 150.00, unit: 'ea.' },
-      { id: 'ba-14', name: 'Undermount Sink',                  cost: 150.00, unit: 'ea.' },
-      { id: 'ba-15', name: 'Mirror',                           cost: 200.00, unit: 'ea.' },
-      { id: 'ba-16', name: 'HVL (needed if no window)',        cost: 275.00, unit: 'ea.' },
+      { id: 'ba-01', name: 'Granite ($/LF)',                  cost: 35.00,  unit: 'LF' },
+      { id: 'ba-02', name: 'New Bottom Vanity',               cost: 125.00, unit: 'LF' },
+      { id: 'ba-03', name: 'Home Depot Vanity w/ Sink (18")', cost: 225.00, unit: 'ea.' },
+      { id: 'ba-04', name: 'Toilet',                          cost: 150.00, unit: 'ea.' },
+      { id: 'ba-14', name: 'Undermount Sink',                 cost: 150.00, unit: 'ea.' },
+      { id: 'ba-15', name: 'Mirror',                          cost: 200.00, unit: 'ea.' },
+      { id: 'ba-16', name: 'HVL (needed if no window)',       cost: 275.00, unit: 'ea.' },
     ]
   },
   {
@@ -122,13 +122,13 @@ const GROUPS = [
     label: 'Tub & Shower',
     section: 'Bathrooms',
     items: [
-      { id: 'ba-07', name: 'Reglaze Tub or Chemical Clean',              cost: 350.00,  unit: 'ea.' },
-      { id: 'ba-08', name: 'Reglaze Tub + Surround',                     cost: 750.00,  unit: 'ea.' },
-      { id: 'ba-09', name: 'Reglaze Shower',                             cost: 1325.00, unit: 'ea.' },
-      { id: 'ba-10', name: 'Tiled Shower Tear Out + Tile Install',       cost: 3100.00, unit: 'ea.' },
-      { id: 'ba-11', name: 'Tub Tile Surround Tear Out + Tile Install',  cost: 2250.00, unit: 'ea.' },
-      { id: 'ba-12', name: 'Shower Plastic Insert Tear Out + New Insert',cost: 825.00,  unit: 'ea.' },
-      { id: 'ba-13', name: 'Tub Tear Out + New Insert & Tub',            cost: 1575.00, unit: 'ea.' },
+      { id: 'ba-07', name: 'Reglaze Tub or Chemical Clean',               cost: 350.00,  unit: 'ea.' },
+      { id: 'ba-08', name: 'Reglaze Tub + Surround',                      cost: 750.00,  unit: 'ea.' },
+      { id: 'ba-09', name: 'Reglaze Shower',                              cost: 1325.00, unit: 'ea.' },
+      { id: 'ba-10', name: 'Tiled Shower Tear Out + Tile Install',        cost: 3100.00, unit: 'ea.' },
+      { id: 'ba-11', name: 'Tub Tile Surround Tear Out + Tile Install',   cost: 2250.00, unit: 'ea.' },
+      { id: 'ba-12', name: 'Shower Plastic Insert Tear Out + New Insert', cost: 825.00,  unit: 'ea.' },
+      { id: 'ba-13', name: 'Tub Tear Out + New Insert & Tub',             cost: 1575.00, unit: 'ea.' },
     ]
   },
   {
@@ -145,13 +145,13 @@ const GROUPS = [
     label: 'HVAC',
     section: 'Systems & Structure',
     items: [
-      { id: 'as-01', name: 'Furnace',                    cost: 3350.00, unit: 'ea.' },
-      { id: 'as-02', name: 'Condensing Unit',            cost: 3300.00, unit: 'ea.' },
-      { id: 'as-03', name: 'Package Unit',               cost: 4700.00, unit: 'ea.' },
-      { id: 'as-04', name: 'A-Coil',                     cost: 1625.00, unit: 'ea.' },
-      { id: 'as-05', name: 'Ducting (if NO HVAC)',       cost: 3200.00, unit: 'ea.' },
-      { id: 'as-06', name: 'Duct Cleaning — Floor Vents',cost: 550.00,  unit: 'ea.' },
-      { id: 'as-07', name: 'Window Unit Replacement 220',cost: 575.00,  unit: 'ea.' },
+      { id: 'as-01', name: 'Furnace',                     cost: 3350.00, unit: 'ea.' },
+      { id: 'as-02', name: 'Condensing Unit',             cost: 3300.00, unit: 'ea.' },
+      { id: 'as-03', name: 'Package Unit',                cost: 4700.00, unit: 'ea.' },
+      { id: 'as-04', name: 'A-Coil',                      cost: 1625.00, unit: 'ea.' },
+      { id: 'as-05', name: 'Ducting (if NO HVAC)',        cost: 3200.00, unit: 'ea.' },
+      { id: 'as-06', name: 'Duct Cleaning — Floor Vents', cost: 550.00,  unit: 'ea.' },
+      { id: 'as-07', name: 'Window Unit Replacement 220', cost: 575.00,  unit: 'ea.' },
     ]
   },
   {
@@ -159,12 +159,12 @@ const GROUPS = [
     label: 'Electrical',
     section: 'Systems & Structure',
     items: [
-      { id: 'as-10', name: 'Switches / Outlets',                    cost: 1400.00, unit: 'house' },
-      { id: 'as-11', name: 'Standard Electrical',                   cost: 1650.00, unit: 'house' },
-      { id: 'as-18', name: 'Electrical Panel Swap to 200A',         cost: 2350.00, unit: 'ea.' },
-      { id: 'as-19', name: 'Full Electrical Rewire (to Studs)',     cost: 5.65,    unit: 'sqft' },
-      { id: 'as-20', name: 'Full Electrical Rewire (leave Drywall)',cost: 9.15,    unit: 'sqft' },
-      { id: 'as-24', name: 'Aluminum Wiring',                       cost: 2450.00, unit: 'variable' },
+      { id: 'as-10', name: 'Switches / Outlets',                     cost: 1400.00, unit: 'house' },
+      { id: 'as-11', name: 'Standard Electrical',                    cost: 1650.00, unit: 'house' },
+      { id: 'as-18', name: 'Electrical Panel Swap to 200A',          cost: 2350.00, unit: 'ea.' },
+      { id: 'as-19', name: 'Full Electrical Rewire (to Studs)',      cost: 5.65,    unit: 'sqft' },
+      { id: 'as-20', name: 'Full Electrical Rewire (leave Drywall)', cost: 9.15,    unit: 'sqft' },
+      { id: 'as-24', name: 'Aluminum Wiring',                        cost: 2450.00, unit: 'variable' },
     ]
   },
   {
@@ -172,14 +172,14 @@ const GROUPS = [
     label: 'Structural',
     section: 'Systems & Structure',
     items: [
-      { id: 'as-12', name: 'Subfloor',                  cost: 8.20,   unit: 'sqft' },
-      { id: 'as-13', name: 'Framing',                   cost: 950.00, unit: 'variable' },
-      { id: 'as-14', name: 'Structural (Pier)',          cost: 375.00, unit: 'pier' },
-      { id: 'as-15', name: 'Structural Foam Injection', cost: 5.85,   unit: 'sqft' },
-      { id: 'as-16', name: 'Roof',                      cost: 1100.00,unit: '225 sqft L&M' },
-      { id: 'as-17', name: 'Plumbing',                  cost: 1000.00,unit: 'variable' },
-      { id: 'as-08', name: 'Hot Water Heater',          cost: 1425.00,unit: 'ea.' },
-      { id: 'as-09', name: 'Hot Water Heater Tank Only',cost: 200.00, unit: 'ea.' },
+      { id: 'as-12', name: 'Subfloor',                   cost: 8.20,    unit: 'sqft' },
+      { id: 'as-13', name: 'Framing',                    cost: 950.00,  unit: 'variable' },
+      { id: 'as-14', name: 'Structural (Pier)',           cost: 375.00,  unit: 'pier' },
+      { id: 'as-15', name: 'Structural Foam Injection',  cost: 5.85,    unit: 'sqft' },
+      { id: 'as-16', name: 'Roof',                       cost: 1100.00, unit: '225 sqft L&M' },
+      { id: 'as-17', name: 'Plumbing',                   cost: 1000.00, unit: 'variable' },
+      { id: 'as-08', name: 'Hot Water Heater',           cost: 1425.00, unit: 'ea.' },
+      { id: 'as-09', name: 'Hot Water Heater Tank Only', cost: 200.00,  unit: 'ea.' },
     ]
   },
   {
@@ -187,9 +187,9 @@ const GROUPS = [
     label: 'Insulation & Drywall',
     section: 'Systems & Structure',
     items: [
-      { id: 'as-21', name: 'Wall Insulation (to Studs)',  cost: 1.20,   unit: 'sqft' },
-      { id: 'as-22', name: 'Attic Insulation',            cost: 1225.00,unit: '1,600 sqft house' },
-      { id: 'as-23', name: 'New Drywall to Studs (L&M)', cost: 5.20,   unit: 'sqft' },
+      { id: 'as-21', name: 'Wall Insulation (to Studs)',  cost: 1.20,    unit: 'sqft' },
+      { id: 'as-22', name: 'Attic Insulation',            cost: 1225.00, unit: '1,600 sqft house' },
+      { id: 'as-23', name: 'New Drywall to Studs (L&M)', cost: 5.20,    unit: 'sqft' },
     ]
   },
   {
@@ -207,11 +207,11 @@ const GROUPS = [
     label: 'Siding',
     section: 'Exterior',
     items: [
-      { id: 'ex-05', name: "Vinyl Siding (10'x10')",   cost: 300.00, unit: 'square' },
-      { id: 'ex-06', name: 'Tuck Pointing',             cost: 225.00, unit: 'variable' },
-      { id: 'ex-07', name: 'Exterior Paint',            cost: 2.60,   unit: 'sqft' },
-      { id: 'ex-08', name: 'Exterior Wood Repair',      cost: 525.00, unit: 'variable' },
-      { id: 'ex-09', name: "Siding Repair (10'x10')",  cost: 975.00, unit: 'section' },
+      { id: 'ex-05', name: "Vinyl Siding (10'x10')",  cost: 300.00, unit: 'square' },
+      { id: 'ex-06', name: 'Tuck Pointing',            cost: 225.00, unit: 'variable' },
+      { id: 'ex-07', name: 'Exterior Paint',           cost: 2.60,   unit: 'sqft' },
+      { id: 'ex-08', name: 'Exterior Wood Repair',     cost: 525.00, unit: 'variable' },
+      { id: 'ex-09', name: "Siding Repair (10'x10')", cost: 975.00, unit: 'section' },
     ]
   },
   {
@@ -219,12 +219,12 @@ const GROUPS = [
     label: 'Windows',
     section: 'Exterior',
     items: [
-      { id: 'ex-13', name: 'Aluminum Window Paint (Int/Ext)',      cost: 700.00, unit: 'house' },
-      { id: 'ex-14', name: 'Windows (3x5 sash)',                   cost: 425.00, unit: 'ea.' },
+      { id: 'ex-13', name: 'Aluminum Window Paint (Int/Ext)',       cost: 700.00, unit: 'house' },
+      { id: 'ex-14', name: 'Windows (3x5 sash)',                    cost: 425.00, unit: 'ea.' },
       { id: 'ex-15', name: 'Window Repair — Non-Insulated (6x6+)', cost: 35.00,  unit: 'sf' },
       { id: 'ex-16', name: 'Window Repair — Insulated (6x6+)',     cost: 40.00,  unit: 'sf' },
-      { id: 'ex-17', name: 'Aluminum Framed Window Pane',          cost: 100.00, unit: 'pane' },
-      { id: 'ex-18', name: 'Guttering',                            cost: 4.15,   unit: 'LF' },
+      { id: 'ex-17', name: 'Aluminum Framed Window Pane',           cost: 100.00, unit: 'pane' },
+      { id: 'ex-18', name: 'Guttering',                             cost: 4.15,   unit: 'LF' },
     ]
   },
   {
@@ -232,10 +232,10 @@ const GROUPS = [
     label: 'Garage',
     section: 'Exterior',
     items: [
-      { id: 'ex-21', name: 'Garage Door — 1 Car',            cost: 975.00,  unit: 'ea.' },
-      { id: 'ex-22', name: 'Garage Door — 2 Car (Installed)',cost: 1225.00, unit: 'ea.' },
-      { id: 'ex-23', name: 'Garage Conversion',              cost: 8850.00, unit: 'ea.' },
-      { id: 'ex-19', name: 'Concrete w/ Demo',               cost: 200.00,  unit: 'sqft' },
+      { id: 'ex-21', name: 'Garage Door — 1 Car',             cost: 975.00,  unit: 'ea.' },
+      { id: 'ex-22', name: 'Garage Door — 2 Car (Installed)', cost: 1225.00, unit: 'ea.' },
+      { id: 'ex-23', name: 'Garage Conversion',               cost: 8850.00, unit: 'ea.' },
+      { id: 'ex-19', name: 'Concrete w/ Demo',                cost: 200.00,  unit: 'sqft' },
     ]
   },
   {
@@ -243,23 +243,40 @@ const GROUPS = [
     label: 'Trees & Landscaping',
     section: 'Exterior',
     items: [
-      { id: 'ex-04', name: 'Landscaping',                cost: 450.00,  unit: 'variable' },
-      { id: 'ex-10', name: 'Tree Trimming',              cost: 450.00,  unit: 'variable' },
-      { id: 'ex-11', name: 'Tree Removal (w/o stump)',   cost: 1450.00, unit: 'tree' },
-      { id: 'ex-12', name: 'Stump Grinding',             cost: 250.00,  unit: 'stump' },
-      { id: 'ex-20', name: 'Mowing (every 2 weeks)',     cost: 45.00,   unit: 'mowing' },
+      { id: 'ex-04', name: 'Landscaping',              cost: 450.00,  unit: 'variable' },
+      { id: 'ex-10', name: 'Tree Trimming',            cost: 450.00,  unit: 'variable' },
+      { id: 'ex-11', name: 'Tree Removal (w/o stump)', cost: 1450.00, unit: 'tree' },
+      { id: 'ex-12', name: 'Stump Grinding',           cost: 250.00,  unit: 'stump' },
+      { id: 'ex-20', name: 'Mowing (every 2 weeks)',   cost: 45.00,   unit: 'mowing' },
     ]
   },
 ];
 
 // ================================
-// STATE
+// STATE — load from browser or start fresh
 // ================================
-const state = {
-  checked: {},
-  quantities: {},
-  expandedGroups: {}, // tracks which groups are open/closed
-};
+function loadState() {
+  try {
+    const saved = localStorage.getItem('spark-estimator');
+    if (saved) return JSON.parse(saved);
+  } catch (e) {}
+  return {
+    checked: {},
+    quantities: {},
+    expandedGroups: {},
+    projectName: 'New Estimate',
+  };
+}
+
+function saveState() {
+  try {
+    localStorage.setItem('spark-estimator', JSON.stringify(state));
+  } catch (e) {
+    console.log('Could not save:', e);
+  }
+}
+
+const state = loadState();
 
 // ================================
 // CALCULATE TOTAL
@@ -282,7 +299,28 @@ function calcTotal() {
 // ================================
 function updateTotal() {
   const total = calcTotal();
-  document.getElementById('total-display').textContent = '$' + Math.round(total).toLocaleString();
+  document.getElementById('total-display').textContent =
+    '$' + Math.round(total).toLocaleString();
+}
+
+// ================================
+// UPDATE PROGRESS BAR
+// ================================
+function updateProgress() {
+  const totalGroups = GROUPS.length;
+  let doneGroups = 0;
+
+  GROUPS.forEach(function(group) {
+    const hasChecked = group.items.some(item => state.checked[item.id]);
+    if (hasChecked) doneGroups++;
+  });
+
+  const pct = totalGroups === 0 ? 0 : Math.round(doneGroups / totalGroups * 100);
+
+  document.getElementById('progress-bar').style.width = pct + '%';
+  document.getElementById('progress-circle').setAttribute('stroke-dasharray', pct + ' 100');
+  document.getElementById('progress-text').textContent = pct + '%';
+  document.getElementById('progress-label').textContent = doneGroups + ' / ' + totalGroups;
 }
 
 // ================================
@@ -294,7 +332,8 @@ function renderItem(item) {
   const lineTotal = isChecked ? (parseFloat(qty) || 0) * item.cost : 0;
 
   return `
-    <div class="rounded-xl overflow-hidden border ${isChecked ? 'border-orange-200 bg-orange-50' : 'border-slate-100 bg-slate-50'} mb-2">
+    <div class="rounded-xl overflow-hidden border
+      ${isChecked ? 'border-orange-200 bg-orange-50' : 'border-slate-100 bg-slate-50'} mb-2">
       <div class="p-3">
         <div class="flex gap-3 items-start">
           <button onclick="toggleItem('${item.id}')"
@@ -304,7 +343,9 @@ function renderItem(item) {
           </button>
           <div class="flex-1">
             <div class="flex justify-between">
-              <p class="font-semibold text-sm ${isChecked ? 'text-slate-900' : 'text-slate-500'}">${item.name}</p>
+              <p class="font-semibold text-sm ${isChecked ? 'text-slate-900' : 'text-slate-500'}">
+                ${item.name}
+              </p>
               <p class="font-bold text-sm ${lineTotal > 0 ? 'text-orange-600' : 'text-slate-200'}">
                 ${lineTotal > 0 ? '$' + Math.round(lineTotal).toLocaleString() : '—'}
               </p>
@@ -315,7 +356,8 @@ function renderItem(item) {
                 <span class="text-xs text-slate-500">Qty</span>
                 <input type="number" value="${qty}" placeholder="0" min="0"
                   oninput="updateQty('${item.id}', this.value)"
-                  class="border border-slate-200 rounded-lg px-3 py-1.5 w-24 text-right text-sm focus:outline-none focus:ring-2 focus:ring-orange-400 bg-white"/>
+                  class="border border-slate-200 rounded-lg px-3 py-1.5 w-24 text-right text-sm
+                  focus:outline-none focus:ring-2 focus:ring-orange-400 bg-white"/>
                 <span class="text-xs text-slate-400">${item.unit}</span>
               </div>` : ''}
           </div>
@@ -326,7 +368,7 @@ function renderItem(item) {
 }
 
 // ================================
-// RENDER ONE GROUP (collapsible)
+// RENDER ONE GROUP
 // ================================
 function renderGroup(group) {
   const isOpen = state.expandedGroups[group.id];
@@ -340,27 +382,26 @@ function renderGroup(group) {
 
   return `
     <div class="bg-white rounded-2xl mb-3 shadow-sm overflow-hidden">
-
-      <!-- GROUP HEADER (click to open/close) -->
       <button onclick="toggleGroup('${group.id}')"
-        class="w-full flex items-center justify-between px-4 py-3.5 text-left ${isOpen ? 'bg-orange-50' : ''}">
+        class="w-full flex items-center justify-between px-4 py-3.5 text-left
+        ${isOpen ? 'bg-orange-50' : ''}">
         <div class="flex items-center gap-2">
           <span class="text-slate-400">${isOpen ? '▲' : '▼'}</span>
           <span class="font-semibold text-sm text-slate-800">${group.label}</span>
-          ${checkedCount > 0 ? `<span class="text-xs bg-orange-100 text-orange-600 px-2 py-0.5 rounded-full">${checkedCount} ✓</span>` : ''}
+          ${checkedCount > 0
+            ? `<span class="text-xs bg-orange-100 text-orange-600 px-2 py-0.5 rounded-full">
+                ${checkedCount} ✓
+               </span>`
+            : ''}
         </div>
         <span class="font-bold text-sm ${groupTotal > 0 ? 'text-orange-600' : 'text-slate-200'}">
           ${groupTotal > 0 ? '$' + Math.round(groupTotal).toLocaleString() : '—'}
         </span>
       </button>
-
-      <!-- GROUP ITEMS (only shown when open) -->
       ${isOpen ? `
         <div class="border-t border-slate-100 px-3 pt-3 pb-2">
           ${group.items.map(item => renderItem(item)).join('')}
-        </div>
-      ` : ''}
-
+        </div>` : ''}
     </div>
   `;
 }
@@ -370,23 +411,16 @@ function renderGroup(group) {
 // ================================
 function renderAllGroups() {
   const app = document.getElementById('app');
-
-  // Get unique section names
   const sections = [...new Set(GROUPS.map(g => g.section))];
-
   let html = '';
-
   sections.forEach(function(section) {
-    // Section title
-    html += `<p class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-2 mt-4">${section}</p>`;
-
-    // All groups in this section
-    const sectionGroups = GROUPS.filter(g => g.section === section);
-    sectionGroups.forEach(function(group) {
-      html += renderGroup(group);
-    });
+    html += `
+      <p class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-2 mt-4">
+        ${section}
+      </p>`;
+    GROUPS.filter(g => g.section === section)
+          .forEach(group => { html += renderGroup(group); });
   });
-
   app.innerHTML = html;
 }
 
@@ -396,6 +430,7 @@ function renderAllGroups() {
 function toggleGroup(groupId) {
   state.expandedGroups[groupId] = !state.expandedGroups[groupId];
   renderAllGroups();
+  saveState();
 }
 
 // ================================
@@ -403,19 +438,11 @@ function toggleGroup(groupId) {
 // ================================
 function toggleItem(id) {
   state.checked[id] = !state.checked[id];
-  if (!state.checked[id]) {
-    state.quantities[id] = '';
-  }
-  renderAllGroups();
-  updateTotal(function toggleItem(id) {
-  state.checked[id] = !state.checked[id];
-  if (!state.checked[id]) {
-    state.quantities[id] = '';
-  }
+  if (!state.checked[id]) state.quantities[id] = '';
   renderAllGroups();
   updateTotal();
-  updateProgress(); // ADD THIS LINE
-});
+  updateProgress();
+  saveState();
 }
 
 // ================================
@@ -425,6 +452,7 @@ function updateQty(id, value) {
   state.quantities[id] = value;
   updateTotal();
   renderAllGroups();
+  saveState();
 }
 
 // ================================
@@ -432,34 +460,4 @@ function updateQty(id, value) {
 // ================================
 renderAllGroups();
 updateTotal();
-// ================================
-// UPDATE PROGRESS BAR
-// ================================
-function updateProgress() {
-  // Count total groups and how many have at least one item checked
-  const totalGroups = GROUPS.length;
-  let doneGroups = 0;
-
-  GROUPS.forEach(function(group) {
-    const hasChecked = group.items.some(item => state.checked[item.id]);
-    if (hasChecked) doneGroups++;
-  });
-
-  const pct = totalGroups === 0 ? 0 : Math.round(doneGroups / totalGroups * 100);
-
-  // Update progress bar width
-  document.getElementById('progress-bar').style.width = pct + '%';
-
-  // Update circle
-  document.getElementById('progress-circle').setAttribute('stroke-dasharray', pct + ' 100');
-
-  // Update text
-  document.getElementById('progress-text').textContent = pct + '%';
-  document.getElementById('progress-label').textContent = doneGroups + ' / ' + totalGroups;
-}
-// ================================
-// START THE APP
-// ================================
-renderAllGroups();
-updateTotal();
-updateProgress(); // ADD THIS LINE
+updateProgress();
