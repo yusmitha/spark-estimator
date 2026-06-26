@@ -407,7 +407,15 @@ function toggleItem(id) {
     state.quantities[id] = '';
   }
   renderAllGroups();
+  updateTotal(function toggleItem(id) {
+  state.checked[id] = !state.checked[id];
+  if (!state.checked[id]) {
+    state.quantities[id] = '';
+  }
+  renderAllGroups();
   updateTotal();
+  updateProgress(); // ADD THIS LINE
+});
 }
 
 // ================================
@@ -424,3 +432,34 @@ function updateQty(id, value) {
 // ================================
 renderAllGroups();
 updateTotal();
+// ================================
+// UPDATE PROGRESS BAR
+// ================================
+function updateProgress() {
+  // Count total groups and how many have at least one item checked
+  const totalGroups = GROUPS.length;
+  let doneGroups = 0;
+
+  GROUPS.forEach(function(group) {
+    const hasChecked = group.items.some(item => state.checked[item.id]);
+    if (hasChecked) doneGroups++;
+  });
+
+  const pct = totalGroups === 0 ? 0 : Math.round(doneGroups / totalGroups * 100);
+
+  // Update progress bar width
+  document.getElementById('progress-bar').style.width = pct + '%';
+
+  // Update circle
+  document.getElementById('progress-circle').setAttribute('stroke-dasharray', pct + ' 100');
+
+  // Update text
+  document.getElementById('progress-text').textContent = pct + '%';
+  document.getElementById('progress-label').textContent = doneGroups + ' / ' + totalGroups;
+}
+// ================================
+// START THE APP
+// ================================
+renderAllGroups();
+updateTotal();
+updateProgress(); // ADD THIS LINE
