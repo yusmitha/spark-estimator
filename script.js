@@ -461,3 +461,74 @@ function updateQty(id, value) {
 renderAllGroups();
 updateTotal();
 updateProgress();
+// ================================
+// EXPORT TO EXCEL
+// ================================
+function exportToExcel() {
+  // Check if library loaded
+  if (typeof XLSX === 'undefined') {
+    alert('Export library not loaded. Check your internet connection.');
+    return;
+  }
+
+  // Create a new workbook (Excel file)
+  const wb = XLSX.utils.book_new();
+
+  // Build rows for the spreadsheet
+  const rows = [];
+
+  // Title row
+  rows.push(['SPARK REPAIR ESTIMATE']);
+  rows.push(['Date:', new Date().toLocaleDateString()]);
+  rows.push([]); // empty row
+
+  // Column headers
+  rows.push(['Section', 'Group', 'Item', 'Unit', 'Unit Cost', 'Qty', 'Total']);
+
+  // Go through each group and item
+  GROUPS.forEach(function(group) {
+    group.items.forEach(function(item) {
+      if (state.checked[item.id]) {
+        const qty = parseFloat(state.quantities[item.id]) || 0;
+        const total = qty * item.cost;
+
+        if (qty > 0) {
+          rows.push([
+            group.section,      // Section
+            group.label,        // Group
+            item.name,          // Item name
+            item.unit,          // Unit
+            item.cost,          // Unit cost
+            qty,                // Quantity
+            total,              // Line total
+          ]);
+        }
+      }
+    });
+  });
+
+  // Empty row then grand total
+  rows.push([]);
+  rows.push(['', '', '', '', '', 'TOTAL:', calcTotal()]);
+
+  // Convert rows to worksheet
+  const ws = XLSX.utils.aoa_to_sheet(rows);
+
+  // Set column widths
+  ws['!cols'] = [
+    { wch: 20 }, // Section
+    { wch: 22 }, // Group
+    { wch: 35 }, // Item
+    { wch: 15 }, // Unit
+    { wch: 12 }, // Unit Cost
+    { wch: 10 }, // Qty
+    { wch: 14 }, // Total
+  ];
+
+  // Add worksheet to workbook
+  XLSX.utils.book_append_sheet(wb, ws, 'Estimate');
+
+  // Download the file
+  const fileName = 'Spark-Repair-Estimate-' + new Date().toISOString().split('T')[0] + '.xlsx';
+  XLSX.writeFile(wb, fileName);
+}
